@@ -2,25 +2,29 @@
 
 @section('structure')
     <div class="page-wrapper">
-        {{-- Header --}}
-        <header class="main-header">
-            Main Header
-        </header>
-
         {{-- Navigation --}}
-        <section class="main-navigation">
+        <section class="main-navigation-wrapper">
+            <div class="logo-panel">
+                <p>Laravel CMS</p>
+            </div>
             Main Navigation
         </section>
 
         {{-- Main Content --}}
-        <main class="content">
-            Main Content
-            @yield('main_content')
-        </main>
+        <main class="main-content-wrapper">
+            {{-- Header --}}
+            <header class="main-header">
+                Main Header
+            </header>
 
-        {{-- Footer --}}
-        <footer class="main-footer">
-            Main Footer
-        </footer>
+            Main Content
+
+            @yield('main_content')
+
+            {{-- Main Footer --}}
+            <footer class="main-footer">
+                Main Footer
+            </footer>
+        </main>
     </div>
 @endsection
