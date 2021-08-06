@@ -7,7 +7,8 @@
             <div class="logo-panel">
                 <p>Laravel CMS</p>
             </div>
-            Main Navigation
+
+            @include('layouts.partials.main-navigation')
         </section>
 
         {{-- Main Content --}}

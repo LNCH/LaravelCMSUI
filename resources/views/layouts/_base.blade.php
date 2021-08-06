@@ -7,6 +7,8 @@
         <title>Laravel CMS UI</title>
 
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+        <script src="https://kit.fontawesome.com/c95b712392.js" crossorigin="anonymous"></script>
     </head>
 
     <body>

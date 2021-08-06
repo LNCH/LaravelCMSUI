@@ -64,3 +64,40 @@ html, body {
         height: var(--header-height);
     }
 }
+
+.main-navigation ul {
+    margin-top: 1rem;
+
+    li {
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            padding: 1rem 1.5rem;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        [class^="fa"] {
+            margin-right: 1rem;
+        }
+
+        span.counter {
+            --size: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: var(--size);
+            height: var(--size);
+            background: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: var(--size);
+            color: var(--sidebar-background);
+            font-size: 0.75em;
+        }
+    }
+}
