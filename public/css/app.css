@@ -31857,10 +31857,10 @@ video {
 }
 
 :root {
-  --header-height: 3.5rem;
+  --header-height: 5rem;
   --sidebar-width: 18rem;
-  --sidebar-background: #3c4b64;
-  --main-content-background: #cdcdcd;
+  --sidebar-background: #040930;
+  --main-content-background: #E0E7F8;
 }
 
 html, body {
@@ -31887,7 +31887,6 @@ html, body {
 }
 
 .main-navigation-wrapper .logo-panel {
-  background: rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31905,12 +31904,15 @@ html, body {
 }
 
 .main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background: var(--main-content-background);
+  padding: 1.5rem 2rem;
 }
 
-.main-content-wrapper .main-header {
-  background: white;
-  height: var(--header-height);
+.main-content-wrapper .main-content {
+  margin-bottom: auto;
 }
 
 .main-navigation ul {
@@ -31925,8 +31927,8 @@ html, body {
   padding: 1rem 1.5rem;
 }
 
-.main-navigation ul li a:hover {
-  background: rgba(0, 0, 0, 0.1);
+.main-navigation ul li.active a, .main-navigation ul li a:hover {
+  background: #212347;
 }
 
 .main-navigation ul li [class^=fa] {
@@ -31940,12 +31942,80 @@ html, body {
   justify-content: center;
   width: var(--size);
   height: var(--size);
-  background: white;
+  background: #FF8281;
+  color: var(--sidebar-background);
+  font-weight: bold;
   border-radius: 50%;
   text-align: center;
   line-height: var(--size);
-  color: var(--sidebar-background);
   font-size: 0.75em;
+}
+
+footer.main-footer {
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  letter-spacing: 0.025rem;
+}
+
+.breadcrumbs {
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumbs ul li {
+  display: inline;
+}
+
+.breadcrumbs ul li a {
+  position: relative;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  font-weight: normal;
+  letter-spacing: 0.0125rem;
+  padding-right: 1rem;
+}
+
+.breadcrumbs ul li a::after {
+  content: "/";
+  position: absolute;
+  right: 0.25rem;
+  top: 55%;
+  transform: translateY(-50%);
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+
+.breadcrumbs ul li.active a {
+  font-weight: bold;
+}
+
+.breadcrumbs ul li:last-child a::after {
+  display: none;
+}
+
+.panel {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.panel .header {
+  padding: 1.5rem 1.5rem 1rem;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.panel .header :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+}
+
+.panel .body {
+  padding: 1.5rem;
+}
+
+.panel .header + .body {
+  padding-top: 0;
 }
 
 @media (min-width: 640px){
