@@ -31915,6 +31915,14 @@ html, body {
   margin-bottom: auto;
 }
 
+.main-content-wrapper .main-content h1.page-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
 .main-navigation ul {
   margin-top: 1rem;
 }
@@ -31959,7 +31967,7 @@ footer.main-footer {
 }
 
 .breadcrumbs {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .breadcrumbs ul li {
@@ -31998,10 +32006,15 @@ footer.main-footer {
   border-radius: 1rem;
   box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
+  overflow: hidden;
 }
 
 .panel .header {
-  padding: 1.5rem 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  min-height: 4rem;
   font-weight: bold;
   opacity: 0.8;
 }
@@ -32016,6 +32029,12 @@ footer.main-footer {
 
 .panel .header + .body {
   padding-top: 0;
+}
+
+.panel .footer {
+  padding: 1rem 1.5rem;
+  background: rgba(0, 0, 0, 0.03);
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.05);
 }
 
 @media (min-width: 640px){

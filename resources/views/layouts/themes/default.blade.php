@@ -24,6 +24,8 @@
             <div class="main-content">
                 @yield('main_content')
 
+                <h1 class="page-title">Monthly Orders</h1>
+
                 <div class="panel">
                     <div class="header">
                         <h2>Monthly Sales</h2>
@@ -38,7 +40,7 @@
                             augue, convallis nec magna quis, auctor semper nisi.</p>
                     </div>
                     <div class="footer">
-
+                        Footer content
                     </div>
                 </div>
             </div>
