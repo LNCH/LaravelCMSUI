@@ -42,7 +42,61 @@
                     <div class="footer">
                         Footer content
                     </div>
-                </div>
+                </div> <!-- End .panel -->
+
+                <div class="panel">
+                    <div class="header">
+                        <h2>System Users</h2>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Role</th>
+                                <th>Date of Birth</th>
+                                <th>Average Score</th>
+                                <th>Registered</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tom Lynch</td>
+                                <td>Lead Developer</td>
+                                <td>24/06/1989</td>
+                                <td>4.7</td>
+                                <td><span class="yes">Yes</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Tom Lynch</td>
+                                <td>Lead Developer</td>
+                                <td>24/06/1989</td>
+                                <td>4.7</td>
+                                <td><span class="yes">Yes</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Tom Lynch</td>
+                                <td>Lead Developer</td>
+                                <td>24/06/1989</td>
+                                <td>4.7</td>
+                                <td><span class="yes">Yes</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Tom Lynch</td>
+                                <td>Lead Developer</td>
+                                <td>24/06/1989</td>
+                                <td>4.7</td>
+                                <td><span class="yes">Yes</span></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <!-- End .panel -->
+
             </div>
 
             {{-- Main Footer --}}

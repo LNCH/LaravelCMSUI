@@ -32037,6 +32037,47 @@ footer.main-footer {
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.05);
 }
 
+.panel table {
+  width: 100%;
+}
+
+table thead tr {
+  border-top: 1px solid var(--main-content-background);
+  border-bottom: 1px solid var(--main-content-background);
+}
+
+table thead tr th {
+  background: #f1f1f1;
+  padding: 0.75rem 1rem;
+  font-size: 0.85em;
+  text-align: left;
+}
+
+table thead tr th:first-child {
+  padding-left: 1.5rem;
+}
+
+table thead tr th:last-child {
+  padding-right: 1.5rem;
+}
+
+table tbody tr {
+  border-bottom: 1px solid var(--main-content-background);
+}
+
+table tbody tr td {
+  padding: 0.75rem 1rem;
+  font-size: 0.85em;
+}
+
+table tbody tr td:first-child {
+  padding-left: 1.5rem;
+}
+
+table tbody tr td:last-child {
+  padding-right: 1.5rem;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
