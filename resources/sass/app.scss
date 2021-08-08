@@ -4,7 +4,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
 
+$xs-breakpoint: 768px;
+
 :root {
+    --xs-breakpoint: $xs-breakpoint;
+
     --header-height: 5rem;
     --sidebar-width: 18rem;
 
@@ -20,6 +24,7 @@ html, body {
 // Structural UI Styles
 .page-wrapper {
     display: flex;
+    position: relative;
     width: 100%;
     min-height: 100vh;
 
@@ -30,6 +35,30 @@ html, body {
     .main-content-wrapper {
         flex: 0 0 calc(100% - var(--sidebar-width));
     }
+
+    @media screen and (max-width: $xs-breakpoint) {
+        display: block;
+
+        .main-navigation-wrapper {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 80%;
+            height: 100vh;
+            z-index: 100;
+            box-shadow: 0 3px 10px 3px rgb(0, 0, 0, 0.4);
+
+            transition: 0.4s ease all;
+        }
+
+        &.nav-open {
+            overflow: hidden;
+
+            .main-navigation-wrapper {
+                transform: translateX(125%);
+            }
+        }
+    }
 }
 
 // Main Nav Styles
@@ -39,14 +68,15 @@ html, body {
     .logo-panel {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+
 
         p {
             --font-size: 1.2rem;
             font-size: var(--font-size);
             line-height: 1;
             margin: 0;
-            padding: calc((var(--header-height) - var(--font-size)) / 2) 0.5rem;
+            padding: calc((var(--header-height) - var(--font-size)) / 2) 2rem;
             color: white;
             font-weight: 700;
             letter-spacing: 0.04rem;
@@ -62,6 +92,13 @@ html, body {
     background: var(--main-content-background);
     padding: 1.5rem 2rem;
 
+    .pre-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
     .main-content {
         margin-bottom: auto;
 
@@ -72,6 +109,10 @@ html, body {
             opacity: 0.8;
             text-shadow: 0 1px 2px rgb(255 255 255 / 80%);
         }
+    }
+
+    @media screen and (max-width: $xs-breakpoint) {
+        padding: 1rem 1.25rem;
     }
 }
 
@@ -122,30 +163,33 @@ footer.main-footer {
 
 // Styling Elements
 
+.mobile-nav-open {
+    display: none;
+
+    @media screen and (max-width: $xs-breakpoint) {
+        display: block;
+    }
+
+    button {
+        padding: 0.5rem;
+        margin-right: -0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
 .breadcrumbs {
-    margin-bottom: 1rem;
 
     ul {
         li {
             display: inline;
+            position: relative;
 
             a {
-                position: relative;
                 opacity: 0.6;
                 font-size: 0.9rem;
                 font-weight: normal;
                 letter-spacing: 0.0125rem;
-                padding-right: 1rem;
-
-                &::after {
-                    content: "/";
-                    position: absolute;
-                    right: 0.25rem;
-                    top: 55%;
-                    transform: translateY(-50%);
-                    font-size: 0.9em;
-                    opacity: 0.6;
-                }
+                margin-right: 1rem;
             }
 
             &.active a {
@@ -154,7 +198,17 @@ footer.main-footer {
                 opacity: 0.8;
             }
 
-            &:last-child a::after {
+            &::after {
+                content: "/";
+                position: absolute;
+                right: 0.25rem;
+                top: 55%;
+                transform: translateY(-50%);
+                font-size: 0.9em;
+                opacity: 0.6;
+            }
+
+            &:last-child::after {
                 display: none;
             }
         }
@@ -183,7 +237,20 @@ footer.main-footer {
     }
 
     .body {
-        padding: 1.5rem;
+        padding: 1.5rem 1.5rem 0;
+
+        p, img {
+            margin-bottom: 1.5rem;
+        }
+
+        table {
+            width: calc(100% + 3rem);
+            margin-left: -1.5rem;
+        }
+
+        @media screen and (max-width: $xs-breakpoint) {
+            overflow-x: auto;
+        }
     }
 
     .header + .body {

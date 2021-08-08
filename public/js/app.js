@@ -1842,6 +1842,8 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./mobile-nav */ "./resources/js/mobile-nav.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -1872,6 +1874,22 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/mobile-nav.js":
+/*!************************************!*\
+  !*** ./resources/js/mobile-nav.js ***!
+  \************************************/
+/***/ (() => {
+
+var openMobileNavButtons = document.querySelectorAll('[data-nav-open]');
+var pageWrapper = document.querySelector('.page-wrapper');
+openMobileNavButtons.forEach(function (openButton) {
+  openButton.addEventListener('click', function (event) {
+    pageWrapper.classList.toggle('nav-open');
+  });
+});
 
 /***/ }),
 

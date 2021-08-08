@@ -13,13 +13,23 @@
 
         {{-- Main Content --}}
         <main class="main-content-wrapper">
-            <div class="breadcrumbs">
-                <ul>
-                    <li><a href="#">Users</a></li>
-                    <li><a href="#">Tom Lynch</a></li>
-                    <li class="active"><a href="#">Edit Details</a></li>
-                </ul>
-            </div>
+
+            <div class="pre-header">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="#">Users</a></li>
+                        <li><a href="#">Tom Lynch</a></li>
+                        <li class="active"><a href="#">Edit Details</a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-nav-open">
+                    <button data-nav-open>
+                        <i class="fad fa-bars"></i>
+                    </button>
+                </div> <!-- End .mobile-nav-open -->
+            </div> <!-- End .pre-header -->
+
 
             <div class="main-content">
                 @yield('main_content')
@@ -38,6 +48,13 @@
                             venenatis purus. Fusce faucibus in orci sed interdum. Quisque et velit in enim eleifend
                             interdum. Nam enim metus, sollicitudin non ante id, iaculis accumsan augue. Etiam eros
                             augue, convallis nec magna quis, auctor semper nisi.</p>
+                        <p>Etiam malesuada vulputate viverra. Donec a suscipit magna. In mollis volutpat volutpat.
+                            Mauris bibendum molestie ipsum. Integer bibendum, ipsum sit amet tempor semper, tellus
+                            tortor aliquam ex, eu tincidunt dolor erat in dolor. Mauris nunc turpis, vestibulum
+                            convallis vehicula non, faucibus eget ante. Sed nibh orci, lobortis ut urna sed, dapibus
+                            venenatis purus. Fusce faucibus in orci sed interdum. Quisque et velit in enim eleifend
+                            interdum. Nam enim metus, sollicitudin non ante id, iaculis accumsan augue. Etiam eros
+                            augue, convallis nec magna quis, auctor semper nisi.</p>
                     </div>
                     <div class="footer">
                         Footer content
@@ -49,8 +66,9 @@
                         <h2>System Users</h2>
                     </div>
 
-                    <table>
-                        <thead>
+                    <div class="body">
+                        <table>
+                            <thead>
                             <tr>
                                 <th>User</th>
                                 <th>Role</th>
@@ -59,8 +77,8 @@
                                 <th>Registered</th>
                                 <th>Actions</th>
                             </tr>
-                        </thead>
-                        <tbody>
+                            </thead>
+                            <tbody>
                             <tr>
                                 <td>Tom Lynch</td>
                                 <td>Lead Developer</td>
@@ -93,8 +111,9 @@
                                 <td><span class="yes">Yes</span></td>
                                 <td></td>
                             </tr>
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div> <!-- End .panel -->
 
             </div>
