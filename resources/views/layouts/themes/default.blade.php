@@ -55,6 +55,75 @@
                             venenatis purus. Fusce faucibus in orci sed interdum. Quisque et velit in enim eleifend
                             interdum. Nam enim metus, sollicitudin non ante id, iaculis accumsan augue. Etiam eros
                             augue, convallis nec magna quis, auctor semper nisi.</p>
+
+                        <h3>Buttons</h3>
+
+                        <p>
+                            <button class="button primary">New User</button>
+                            <button class="button secondary">Cancel</button>
+                            <button class="button success">Save</button>
+                            <button class="button error">Delete</button>
+                        </p>
+
+                        <p>
+                            <button class="button primary outline">New User</button>
+                            <button class="button secondary outline">Cancel</button>
+                            <button class="button success outline">Save</button>
+                            <button class="button error outline">Delete</button>
+                        </p>
+
+                        <p>
+                            <button class="button primary small">New User</button>
+                            <button class="button secondary small">Cancel</button>
+                            <button class="button success small">Save</button>
+                            <button class="button error small">Delete</button>
+                        </p>
+
+                        <p>
+                            <button class="button primary x-small">New User</button>
+                            <button class="button secondary x-small">Cancel</button>
+                            <button class="button success x-small">Save</button>
+                            <button class="button error x-small">Delete</button>
+                        </p>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <h3>Colours</h3>
+                            <div style="display: flex;">
+                                <span class="bg-primary-lighter" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-primary-light" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-primary" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-primary-dark" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-primary-darker" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                            </div>
+                            <div style="display: flex;">
+                                <span class="bg-secondary-lighter" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-secondary-light" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-secondary" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-secondary-dark" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-secondary-darker" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                            </div>
+                            <div style="display: flex;">
+                                <span class="bg-success-lighter" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-success-light" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-success" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-success-dark" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-success-darker" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                            </div>
+                            <div style="display: flex;">
+                                <span class="bg-error-lighter" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-error-light" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-error" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-error-dark" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-error-darker" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                            </div>
+                            <div style="display: flex;">
+                                <span class="bg-warning-lighter" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-warning-light" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-warning" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-warning-dark" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                                <span class="bg-warning-darker" style="width: 75px; height: 75px; display: inline-block; background: red;"></span>
+                            </div>
+                        </div>
                     </div>
                     <div class="footer">
                         Footer content

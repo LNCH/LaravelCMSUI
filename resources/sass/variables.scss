@@ -1,0 +1,52 @@
+@use "sass:color";
+
+$colors: (
+    primary: #2c4e90,
+    secondary: #a4a7a7,
+    success: #2c9c2c,
+    error: #ca3838,
+    warning: #ef9e24
+);
+
+@mixin color-modifiers {
+    $lighter-lightness: +30%;
+    $lighter-saturation: -20%;
+
+    $light-lightness: +15%;
+    $light-saturation: -10%;
+
+    $dark-lightness: -20%;
+    $dark-saturation: +15%;
+
+    $darker-lightness: -35%;
+    $darker-saturation: +25%;
+
+    @each $name, $hex in $colors {
+        $lighter: color.scale($hex, $lightness: $lighter-lightness, $saturation: $lighter-saturation);
+        $light: color.scale($hex, $lightness: $light-lightness, $saturation: $light-saturation);
+        $dark: color.scale($hex, $lightness: $dark-lightness, $saturation: $dark-saturation);
+        $darker: color.scale($hex, $lightness: $darker-lightness, $saturation: $darker-saturation);
+
+        .bg-#{$name}-lighter { background-color: #{$lighter} !important; }
+        .bg-#{$name}-light { background-color: #{$light} !important; }
+        .bg-#{$name} { background-color: $hex !important; }
+        .bg-#{$name}-dark { background-color: #{$dark} !important; }
+        .bg-#{$name}-darker { background-color: #{$darker} !important; }
+
+        .text-#{$name}-lighter { color: #{$lighter} !important; }
+        .text-#{$name}-light { color: #{$light} !important; }
+        .text-#{$name} { color: $hex !important; }
+        .text-#{$name}-dark { color: #{$dark} !important; }
+        .text-#{$name}-darker { color: #{$darker} !important; }
+
+        :root {
+            --#{$name}-color-lighter: #{$lighter};
+            --#{$name}-color-light: #{$light};
+            --#{$name}-color: #{$hex};
+            --#{$name}-color-dark: #{$dark};
+            --#{$name}-color-darker: #{$darker};
+        }
+    }
+}
+
+@include color-modifiers;

@@ -1,4 +1,244 @@
 @import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap);
+.bg-primary-lighter {
+  background-color: #5e7fbe !important;
+}
+
+.bg-primary-light {
+  background-color: #3e64af !important;
+}
+
+.bg-primary {
+  background-color: #2c4e90 !important;
+}
+
+.bg-primary-dark {
+  background-color: #1e3d78 !important;
+}
+
+.bg-primary-darker {
+  background-color: #153065 !important;
+}
+
+.text-primary-lighter {
+  color: #5e7fbe !important;
+}
+
+.text-primary-light {
+  color: #3e64af !important;
+}
+
+.text-primary {
+  color: #2c4e90 !important;
+}
+
+.text-primary-dark {
+  color: #1e3d78 !important;
+}
+
+.text-primary-darker {
+  color: #153065 !important;
+}
+
+:root {
+  --primary-color-lighter: #5e7fbe;
+  --primary-color-light: #3e64af;
+  --primary-color: #2c4e90;
+  --primary-color-dark: #1e3d78;
+  --primary-color-darker: #153065;
+}
+
+.bg-secondary-lighter {
+  background-color: #c0c1c1 !important;
+}
+
+.bg-secondary-light {
+  background-color: #b2b4b4 !important;
+}
+
+.bg-secondary {
+  background-color: #a4a7a7 !important;
+}
+
+.bg-secondary-dark {
+  background-color: #709999 !important;
+}
+
+.bg-secondary-darker {
+  background-color: #4f8888 !important;
+}
+
+.text-secondary-lighter {
+  color: #c0c1c1 !important;
+}
+
+.text-secondary-light {
+  color: #b2b4b4 !important;
+}
+
+.text-secondary {
+  color: #a4a7a7 !important;
+}
+
+.text-secondary-dark {
+  color: #709999 !important;
+}
+
+.text-secondary-darker {
+  color: #4f8888 !important;
+}
+
+:root {
+  --secondary-color-lighter: #c0c1c1;
+  --secondary-color-light: #b2b4b4;
+  --secondary-color: #a4a7a7;
+  --secondary-color-dark: #709999;
+  --secondary-color-darker: #4f8888;
+}
+
+.bg-success-lighter {
+  background-color: #62c362 !important;
+}
+
+.bg-success-light {
+  background-color: #3db93d !important;
+}
+
+.bg-success {
+  background-color: #2c9c2c !important;
+}
+
+.bg-success-dark {
+  background-color: #1e821e !important;
+}
+
+.bg-success-darker {
+  background-color: #156d15 !important;
+}
+
+.text-success-lighter {
+  color: #62c362 !important;
+}
+
+.text-success-light {
+  color: #3db93d !important;
+}
+
+.text-success {
+  color: #2c9c2c !important;
+}
+
+.text-success-dark {
+  color: #1e821e !important;
+}
+
+.text-success-darker {
+  color: #156d15 !important;
+}
+
+:root {
+  --success-color-lighter: #62c362;
+  --success-color-light: #3db93d;
+  --success-color: #2c9c2c;
+  --success-color-dark: #1e821e;
+  --success-color-darker: #156d15;
+}
+
+.bg-error-lighter {
+  background-color: #d07e7e !important;
+}
+
+.bg-error-light {
+  background-color: #cc5c5c !important;
+}
+
+.bg-error {
+  background-color: #ca3838 !important;
+}
+
+.bg-error-dark {
+  background-color: #aa2525 !important;
+}
+
+.bg-error-darker {
+  background-color: #8d1a1a !important;
+}
+
+.text-error-lighter {
+  color: #d07e7e !important;
+}
+
+.text-error-light {
+  color: #cc5c5c !important;
+}
+
+.text-error {
+  color: #ca3838 !important;
+}
+
+.text-error-dark {
+  color: #aa2525 !important;
+}
+
+.text-error-darker {
+  color: #8d1a1a !important;
+}
+
+:root {
+  --error-color-lighter: #d07e7e;
+  --error-color-light: #cc5c5c;
+  --error-color: #ca3838;
+  --error-color-dark: #aa2525;
+  --error-color-darker: #8d1a1a;
+}
+
+.bg-warning-lighter {
+  background-color: #e6b874 !important;
+}
+
+.bg-warning-light {
+  background-color: #e9ab4d !important;
+}
+
+.bg-warning {
+  background-color: #ef9e24 !important;
+}
+
+.bg-warning-dark {
+  background-color: #cf820d !important;
+}
+
+.bg-warning-darker {
+  background-color: #aa6a09 !important;
+}
+
+.text-warning-lighter {
+  color: #e6b874 !important;
+}
+
+.text-warning-light {
+  color: #e9ab4d !important;
+}
+
+.text-warning {
+  color: #ef9e24 !important;
+}
+
+.text-warning-dark {
+  color: #cf820d !important;
+}
+
+.text-warning-darker {
+  color: #aa6a09 !important;
+}
+
+:root {
+  --warning-color-lighter: #e6b874;
+  --warning-color-light: #e9ab4d;
+  --warning-color: #ef9e24;
+  --warning-color-dark: #cf820d;
+  --warning-color-darker: #aa6a09;
+}
+
 /*! tailwindcss v2.2.4 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -32075,6 +32315,7 @@ footer.main-footer {
 
 .panel .header :is(h1, h2, h3, h4, h5, h6) {
   margin: 0;
+  font-size: 1.1rem;
 }
 
 .panel .body {
@@ -32083,6 +32324,12 @@ footer.main-footer {
 
 .panel .body p, .panel .body img {
   margin-bottom: 1.5rem;
+}
+
+.panel .body h2, .panel .body h3, .panel .body h4, .panel .body h5, .panel .body h6 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
 }
 
 .panel .body table {
@@ -32145,6 +32392,81 @@ table tbody tr td:first-child {
 
 table tbody tr td:last-child {
   padding-right: 1.5rem;
+}
+
+button.button {
+  --background-color: #CCCCCC;
+  --hover-background-color: grey;
+  --border-color: transparent;
+  --font-color: inherit;
+  --outline-font-color: var(--font-color);
+  --padding-x: 1rem;
+  --padding-y: 0.5rem;
+  --font-size: 0.9rem;
+  background: var(--background-color);
+  border: 2px solid var(--border-color);
+  color: var(--font-color);
+  font-size: var(--font-size);
+  padding: var(--padding-y) var(--padding-x);
+  border-radius: 0.25rem;
+  letter-spacing: 0.25px;
+  transition: 0.1s ease all;
+}
+
+button.button:hover {
+  background: var(--hover-background-color);
+}
+
+button.button.primary {
+  --background-color: var(--primary-color, #2c4e90);
+  --hover-background-color: var(--primary-color-dark);
+  --font-color: white;
+  --outline-font-color: var(--background-color);
+}
+
+button.button.secondary {
+  --background-color: var(--secondary-color);
+  --hover-background-color: var(--secondary-color-dark);
+  --font-color: inherit;
+  --outline-font-color: grey;
+}
+
+button.button.success {
+  --background-color: var(--success-color);
+  --hover-background-color: var(--success-color-dark);
+  --font-color: white;
+  --outline-font-color: var(--background-color);
+}
+
+button.button.error {
+  --background-color: var(--error-color);
+  --hover-background-color: var(--error-color-dark);
+  --font-color: white;
+  --outline-font-color: var(--background-color);
+}
+
+button.button.outline {
+  background: var(--border-color);
+  border-color: var(--background-color);
+  color: var(--outline-font-color);
+  font-weight: bold;
+}
+
+button.button.outline:hover {
+  background: var(--background-color);
+  color: var(--font-color);
+}
+
+button.button.small {
+  --padding-x: 0.8rem;
+  --padding-y: 0.3rem;
+  --font-size: 0.8rem;
+}
+
+button.button.x-small {
+  --padding-x: 0.6rem;
+  --padding-y: 0.2rem;
+  --font-size: 0.7rem;
 }
 
 @media (min-width: 640px){

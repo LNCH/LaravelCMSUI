@@ -1,3 +1,8 @@
+@use 'sass:color';
+@use "sass:map";
+
+@import "variables";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +10,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 $xs-breakpoint: 768px;
+
+$primary-color: #2c4e90;
 
 :root {
     --xs-breakpoint: $xs-breakpoint;
@@ -14,6 +21,12 @@ $xs-breakpoint: 768px;
 
     --sidebar-background: #040930;
     --main-content-background: #E0E7F8;
+
+    //--primary-color-lighter: #{color.scale($primary-color, $lightness: +30%, $saturation: -20%)};
+    //--primary-color-light: #{color.scale($primary-color, $lightness: +15%, $saturation: -10%)};
+    //--primary-color: #{map.get($colors, "primary")};
+    //--primary-color-dark: #{color.scale($primary-color, $lightness: -20%, $saturation: +10%)};
+    //--primary-color-darker: #{color.scale($primary-color, $lightness: -40%, $saturation: +20%)};
 }
 
 html, body {
@@ -233,6 +246,7 @@ footer.main-footer {
 
         :is(h1, h2, h3, h4, h5, h6) {
             margin: 0;
+            font-size: 1.1rem;
         }
     }
 
@@ -241,6 +255,12 @@ footer.main-footer {
 
         p, img {
             margin-bottom: 1.5rem;
+        }
+
+        h2, h3, h4, h5, h6 {
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
         }
 
         table {
@@ -306,5 +326,82 @@ table {
                 }
             }
         }
+    }
+}
+
+button.button {
+    --background-color: #CCCCCC;
+    --hover-background-color: grey;
+    --border-color: transparent;
+    --font-color: inherit;
+    --outline-font-color: var(--font-color);
+
+    --padding-x: 1rem;
+    --padding-y: 0.5rem;
+    --font-size: 0.9rem;
+
+    background: var(--background-color);
+    border: 2px solid var(--border-color);
+    color: var(--font-color);
+    font-size: var(--font-size);
+    padding: var(--padding-y) var(--padding-x);
+    border-radius: 0.25rem;
+    letter-spacing: 0.25px;
+    transition: 0.1s ease all;
+
+    &:hover {
+        background: var(--hover-background-color);
+    }
+
+    &.primary {
+        --background-color: var(--primary-color, #2c4e90);
+        --hover-background-color: var(--primary-color-dark);
+        --font-color: white;
+        --outline-font-color: var(--background-color);
+    }
+
+    &.secondary {
+        --background-color: var(--secondary-color);
+        --hover-background-color: var(--secondary-color-dark);
+        --font-color: inherit;
+        --outline-font-color: grey;
+    }
+
+    &.success {
+        --background-color: var(--success-color);
+        --hover-background-color: var(--success-color-dark);
+        --font-color: white;
+        --outline-font-color: var(--background-color);
+    }
+
+    &.error {
+        --background-color: var(--error-color);
+        --hover-background-color: var(--error-color-dark);
+        --font-color: white;
+        --outline-font-color: var(--background-color);
+    }
+
+    &.outline {
+        background: var(--border-color);
+        border-color: var(--background-color);
+        color: var(--outline-font-color);
+        font-weight: bold;
+
+        &:hover {
+            background: var(--background-color);
+            color: var(--font-color);
+        }
+    }
+
+    &.small {
+        --padding-x: 0.8rem;
+        --padding-y: 0.3rem;
+        --font-size: 0.8rem;
+    }
+
+    &.x-small {
+        --padding-x: 0.6rem;
+        --padding-y: 0.2rem;
+        --font-size: 0.7rem;
     }
 }
